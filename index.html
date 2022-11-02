@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pose Detection</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./button.css">
+        <link rel="stylesheet" href="./index.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+    </head>
+    <body>
+        <div id="header">
+            <p>Pose Detection</p>
+        </div>
+        <div id="webcam-container">
+            <div id="video-container">
+                <video id="video" autoplay></video>
+                <p>Webcam</p>
+            </div>
+            <div id="canvas-container">
+                <canvas id="canvas"></canvas>
+                <p>Canvas</p>
+            </div>
+        </div>
+        <div id="footer">
+            <button class="green">Start</button>
+            <button class="red">Stop</button>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>

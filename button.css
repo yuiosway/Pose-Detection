@@ -1,0 +1,23 @@
+button {
+    height: 7vh;
+    width: 200px;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #2d3335;
+    color: #ffffff;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px 4px #fffdfd41;
+}
+
+button.green {
+    background-color: #4CAF50;
+}
+
+button.red {
+    background-color: #f44336;
+}
